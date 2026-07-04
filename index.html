@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Cargando Proyecto...</title>
+
+    <!-- Metatags Estáticos para la miniatura de Genially -->
+    <!-- Nota: Los rastreadores de RRSS leerán esta imagen fija antes de ejecutar el JS -->
+    <meta property="og:title" content="Vista Previa del Proyecto">
+    <meta property="og:description" content="Haz click para abrir la invitación">
+    <meta property="og:image" content="https://genially-thumbnails.genially.com/6a03776ed64fd467bed043a7.png?ts=1782403576663">
+    <meta property="og:type" content="website">
+
+    <script>
+        window.onload = function() {
+            // 1. Configura aquí la URL base de tu Web App de Google Apps Script (terminada en /exec)
+            const appsScriptBaseUrl = "https://script.google.com/macros/s/AKfycbxHmcnYs9eT5RM2SXLsm3s1zYIn-XF6VPquWPMwvcTKbIZEM6dKIvSsHTDkrQZOoSjJ/exec";
+
+            // 2. Capturar todos los parámetros de la URL actual (ej: ?id=123&user=test)
+            const queryString = window.location.search;
+
+            // 3. Construir la URL final concatenando los parámetros recibidos
+            const urlFinal = appsScriptBaseUrl + queryString;
+
+            // 4. Redirigir inmediatamente al usuario
+            window.location.replace(urlFinal);
+        };
+    </script>
+</head>
+<body>
+    <p>Redirigiendo de forma segura...</p>
+</body>
+</html>
